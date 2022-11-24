@@ -323,36 +323,36 @@ contract Evaluator
         return string(bytesArray);
     }
 
-    function readName(address studentAddres)
+    function readName(address studentAddress)
 	public
 	view
 	returns(string memory)
 	{
-		return randomNames[assignedRank[studentAddres]];
+		return randomNames[assignedRank[studentAddress]];
 	}
 
-	function readLegs(address studentAddres)
+	function readLegs(address studentAddress)
 	public
 	view
 	returns(uint256)
 	{
-		return randomLegs[assignedRank[studentAddres]];
+		return randomLegs[assignedRank[studentAddress]];
 	}
 
-	function readSex(address studentAddres)
+	function readSex(address studentAddress)
 	public
 	view
 	returns(uint256)
 	{
-		return randomSex[assignedRank[studentAddres]];
+		return randomSex[assignedRank[studentAddress]];
 	}
 
-	function readWings(address studentAddres)
+	function readWings(address studentAddress)
 	public
 	view
 	returns(bool)
 	{
-		return randomWings[assignedRank[studentAddres]];
+		return randomWings[assignedRank[studentAddress]];
 	}
 
 	function setRandomValuesStore(string[20] memory _randomNames, uint256[20] memory _randomLegs, uint256[20] memory _randomSex, bool[20] memory _randomWings) 
